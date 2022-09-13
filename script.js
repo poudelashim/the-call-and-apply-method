@@ -38,3 +38,12 @@ const swiss = {
 };
 book.call(swiss, 583, "Ashma Pyakurel");
 console.log(swiss);
+
+//the apply method
+//apply method is not mostly used in modern js.
+
+const flightData = [586, "Ram Bahadur"];
+book.apply(swiss, flightData);
+console.log(swiss);
+
+book.call(swiss, ...flightData);
